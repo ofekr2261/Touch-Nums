@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="#">
+  <title>touch-nums</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body onload="onInit()">
+  <h1>Touch-Nums Game 🔢</h1>
+  <h2>See if you can beat the counting child 💪</h2>
+  <div class="unit">
+    <button class="new-game" onclick="onRestart()">
+      New Game
+    </button>
+    <div id="timerBox">
+      <span id="timer">00:00:00</span>
+    </div>
+    <div class="next-number">
+      <h3>Next Number: <span>1</span></h3>
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="easy" onclick="changeDifficulty(4)">Easy</button>
+    <button class="medium" onclick="changeDifficulty(5)">Medium</button>
+    <button class="hard" onclick="changeDifficulty(6)">Hard</button>
+  </div>
+  <table class="table">
+    <tbody class="board"></tbody>
+  </table>
+
+  <script src="js/main.js"></script>
+  <script src="js/utils.js"></script>
+</body>
+
+</html>
